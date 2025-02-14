@@ -1,5 +1,7 @@
 # DevTinder
 
+
+EP:- 01
 - Creted a vite + react application
 - reamove unecessary code and Create a Hello World app
 - Install tailwind CSS
@@ -10,3 +12,6 @@
 - Create Browser -router -> Routes -> Route"/Body -> RoutChildren
 - Create am Outlet in your Body Component
 - Create a footer in your App
+
+EP:- 02
+- Create a Login Page
