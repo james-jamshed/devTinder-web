@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 
 const Login = () => {
@@ -7,7 +8,18 @@ const Login = () => {
 
   const handleLogin = async () => {
 
-  }
+    try {
+      const res = await axios.post("http://localhost:3000/login", {
+        emailId,
+        Password,
+      });
+    }
+    catch (err) {
+      console.error(err);
+     
+    }
+
+  };
 
 
 
@@ -46,7 +58,7 @@ const Login = () => {
             </label>
           </div>
           <div className="card-actions justify-center">
-            <button className="btn btn-primary">Login</button>
+            <button className="btn btn-primary" onClick={handleLogin}>Login</button>
           </div>
         </div>
       </div>
