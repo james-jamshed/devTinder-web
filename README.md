@@ -15,3 +15,12 @@ EP:- 01
 
 EP:- 02
 - Create a Login Page
+-Install axios
+-CORS - install cors in backend => add middleware to with configuration: origin,credentials: true
+-Whenever you're making API call so pass with axios =>{withcredentials: true}
+-Install Redux Toolkit and read -https://redux-toolkit.js.org/tutorials/quick-start 
+-Install react-redux + @redusjs/toolkit => Configurestore => Provider => CreateSlice => add reducer to store
+-Add redux devtools in Chrome
+-Login and see if your data is coming properly or not
+-NavBar shouls Update as soon as user Logs in
+-Refactor our code to add constatnt filr + crete a component

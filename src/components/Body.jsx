@@ -10,7 +10,7 @@ const Body = () => {
        <NavBar />
        <Outlet />
        <Footer />
-       <Login />
+      
 
     </div>
   )
