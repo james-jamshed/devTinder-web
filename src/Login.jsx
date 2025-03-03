@@ -3,15 +3,15 @@ import React, { useState } from "react";
 
 const Login = () => {
 
-  const [emailId, setEmailId] = useState("");
-  const [Password, setPassword] = useState("");
+  const [emailId, setEmailId] = useState("msdhoni0823@gmail.com");
+  const [password, setPassword] = useState("Msdhoni2001@");
 
   const handleLogin = async () => {
 
     try {
       const res = await axios.post("http://localhost:3000/login", {
         emailId,
-        Password,
+        password,
       });
     }
     catch (err) {
@@ -49,7 +49,7 @@ const Login = () => {
               </div>
               <input
                 type="text"
-                value={Password}
+                value={password}
                 placeholder="Password"
                 className="input input-bordered w-full max-w-xs"
                 onChange={(e)=> setPassword(e.target.value)}
