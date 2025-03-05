@@ -23,4 +23,10 @@ EP:- 02
 -Add redux devtools in Chrome
 -Login and see if your data is coming properly or not
 -NavBar shouls Update as soon as user Logs in
--Refactor our code to add constatnt filr + crete a component
+-Refactor our code to add constatnt filr + crete a component folder
+
+
+
+EP:- 03
+-You should not be acees other routes without login 
+-If token is not present redirect User to Login page
