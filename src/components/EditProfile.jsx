@@ -9,9 +9,9 @@ const EditProfile = ({ user }) => {
   const [firstName, setFirstName] = useState(user.firstName);
   const [lastName, setLastName] = useState(user.lastName);
   const [photoUrl, setPhotoUrl] = useState(user.photoUrl);
-  const [age, setAge] = useState(user.age);
-  const [gender, setGender] = useState(user.gender);
-  const [about, setAbout] = useState(user.about);
+  const [age, setAge] = useState(user.age || "");
+  const [gender, setGender] = useState(user.gender || "");
+  const [about, setAbout] = useState(user.about || "");
   const [error, setError] = useState("");
   const dispatch = useDispatch();
   const [showToast, setShowToast] = useState(false);
@@ -32,7 +32,6 @@ const EditProfile = ({ user }) => {
         },
         { withCredentials: true }
       );
-      console.log("Updated profile response:", res.data); // Debugging step
       dispatch(addUser(res?.data?.data));
       setShowToast(true);
       setTimeout(() => {
@@ -118,7 +117,8 @@ const EditProfile = ({ user }) => {
                   />
                 </label>
               </div>
-              <p className="text-red-500">{error}</p>
+              {error && <p className="text-red-500">{typeof error === "string" ? error : "An unexpected error occurred"}</p>}
+
               <div className="card-actions justify-center m-2">
                 <button className="btn btn-primary" onClick={saveProfile}>
                   Save Profile
