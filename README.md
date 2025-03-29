@@ -33,3 +33,10 @@ EP:- 03
 -Logout Features
 -get the feed and add the feed in the store
 -build the user card in feed
+-Edit PROFILE Features
+-Show Toast Message on save Profile
+
+
+ep:-04
+
+-See all My Connection
