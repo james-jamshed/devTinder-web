@@ -44,7 +44,7 @@ const Connection = () => {
           <div className='flex  m-4 p-4 max-w-1/2  rouded-lg bg-base-300 mx-auto'>
             <div>
               <img alt='photo'
-                className='w-20 h-20 rounded-full'
+                className='w-20 h-20 rounded-full '
                 src={photoUrl} />
             </div>
             <div className='text-left mx-4'>

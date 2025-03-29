@@ -39,4 +39,5 @@ EP:- 03
 
 ep:-04
 
--See all My Connection
+-New page -See all My Connection
+-New page-see all my connection request
