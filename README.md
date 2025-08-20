@@ -34,7 +34,7 @@ EP:- 03
 -get the feed and add the feed in the store
 -build the user card in feed
 -Edit PROFILE Features
--Show Toast Message on save Profile
+-Show Toastnnnnnnnn Message on save Profile
 
 
 ep:-04
